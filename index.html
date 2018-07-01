@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="content">
+      <div class="list-container">
+        <div class="list-box">
+            <li class="list-item">Select a place</li>
+          <input class="search" type="text" data-bind="textInput: searchInput" />
+        </div>
+        <ul class="list-box" data-bind="foreach: filteredPlaces">
+          <li class="list-item">
+            <span data-bind="text: name, click: triggerMarker"></span>
+          </li>
+        </ul>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='js/app.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjzSY9LOwRAUvtADaOf0GD6boe2yAaFws&callback=initApp"
+    async defer></script>
+  </body>
+</html>

@@ -108,13 +108,6 @@ var placesModel = [
       var address = venueInfo.location.formattedAddress
     
       var category = venueInfo.categories[0].name
-
-      // var address = venueInfo.location.hasOwnProperty("formattedAddress") ? venueInfo.location.formattedAddress : "Foursquare has no info at present";
-
-      // var rating = venueInfo.hasOwnProperty("rating") ? venueInfo.rating + ' / 10' : "No rating available";
-
-      // var tips = venueInfo.tips.hasOwnProperty("groups") ? venueInfo.tips.groups[0].items[0].text : "No tip available at present";
-
       
       self.infoWindowContent += 
             '<p>' + address + '</p>' +

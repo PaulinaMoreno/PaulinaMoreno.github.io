@@ -108,11 +108,12 @@ var placesModel = [
       var address = venueInfo.location.formattedAddress
     
       var category = venueInfo.categories[0].name
+      var postalcode = venueInfo.location.postalCode
       
       self.infoWindowContent += 
             '<p>' + address + '</p>' +
             '<p>Category: ' + category + '</p>' +
-            // '<p>Location: ' + address + '</p>' +
+            '<p>Postal Code: ' + postalcode + '</p>' +
             // '<p>Rating: ' + rating + '</p>' +
             // '<p>Click to read more on <a href="' + venue.canonicalUrl + '?ref=' + this.client_id + '" target="_blank">Foursquare</a></p>' +
             '<p>Information powered by Foursquare</p>';
